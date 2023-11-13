@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Avalie a sua mentoria</title>
+</head>
+<body>
+    <header>
+        <h1>avalie a sua mentoria</h1>
+        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p> 
+    </br> 
+        <img src="images/img1.svg" alt="balão vermelho com estrelas de avaliação dentro">
+    </header>
+
+    <main>
+        <div class="text">
+            <legend>Informações pessoais</legend>
+        </div>
+        <form id="my-form">
+            <div class="personal-info">
+                <div class="input-wrapper">
+                    <label for="name">Nome</label>
+                    <input 
+                    type="text" 
+                    id="name"
+                    required>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="lastname">Sobrenome</label>
+                    <input type="text" id="lastname">
+                </div>
+            </div>
+        </br>
+            <div class="input-email">
+                <label for="email">Email<span>(digite um email válido)</span></label>
+                <input 
+                type="text" 
+                id="name"
+                required>
+            </div>
+        </br>
+            <fieldset>
+                <div class="mentor-info">
+                    <h2>Informações do mentor</h2>
+                    
+                    <hr>
+                </br>
+                    <label for="mentor">Selecione quem foi o seu mentor</label>
+                    <select id="mentor">
+                            <option value="mentor0">         </option>
+                            <option value="mentor1">Vivi</option>
+                            <option value="mentor2">Mia</option>
+                            <option value="mentor3">Derek</option>
+                            <option value="mentor4">Kobe</option>
+                    </select>
+
+                </br>
+                    <div class="input-wrapper">
+                        <div class="feedback-wrapper">
+                            <label for="feedback">Feedback sobre o mentor</label>
+                            <input type="textarea" id="feedback">
+                        </div>
+                    </div>
+                </br>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="questions-answered" />
+                        <label for="questions-answered">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                    </div>
+                </div>
+            </fieldset>
+            
+                
+
+        </br>           
+        </br>
+            <fieldset>
+                <h2>Agendando próxima mentoria</h2>
+            
+                <hr>
+            </br>
+                <div class="schedule-next">
+                    <div class="input-date">
+                        <label for="schedule">Data</label>
+                        <input type="date" id="schedule"/>
+                    </div>
+
+                    <div class="input-start">
+                        <label for="schedule">Das</label>
+                        <input type="time" id="schedule"/>
+                    </div>
+
+                    <div class="input-end">
+                        <label for="schedule">Até</label>
+                        <input type="time" id="schedule"/>
+                    </div>
+
+                </div>
+            </fieldset>
+        </form>
+                <input 
+                class="button" 
+                type="submit" 
+                form="my-form"
+                value="Salvar">
+           
+            
+        
+    </main>
+
+</body>
+</html>
